@@ -79,7 +79,7 @@ namespace VlcMemoryLeaksDemo
         public void SetMedium()
         {
             // TODO: Add some video URI here.
-            _mediaPlayer.Media = new Media(_libVlc, new Uri(@""));
+            _mediaPlayer.Media = new Media(_libVlc, new Uri(@"file:///C:/kiwi-platform/Content/cdn-us.ki-wi.cz/443/f/fit/Euronics - black friday Samsung.mp4"));
         }
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace VlcMemoryLeaksDemo
         {
             if (_mediaPlayer.IsPlaying)
             {
-                _mediaPlayer.Pause();
+                _mediaPlayer.Stop();
             }
         }
 

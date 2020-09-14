@@ -39,6 +39,7 @@ namespace VlcMemoryLeaksDemo
             {
                 if (_vlcViewer != null)
                 {
+                    ParentGrid.Children.Remove(_vlcViewer.Display);
                     _vlcViewer.Stop();
                     _vlcViewer.Dispose();
                 }
