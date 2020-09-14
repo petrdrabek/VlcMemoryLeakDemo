@@ -78,7 +78,8 @@ namespace VlcMemoryLeaksDemo
 
         public void SetMedium()
         {
-            _mediaPlayer.Media = new Media(_libVlc, new Uri(@"file:///C:/kiwi-platform/Content/cdn-us.ki-wi.cz/443/f/fit/Euronics - black friday Samsung.mp4"));
+            // TODO: Add some video URI here.
+            _mediaPlayer.Media = new Media(_libVlc, new Uri(@""));
         }
 
         /// <summary>
